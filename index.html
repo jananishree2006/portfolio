@@ -27,7 +27,7 @@
       <div class="project">
         <h3>weather app</h3>
 <p>Description:This is a weather app to check the temperature of the place/city.</p>
-<a target="_blank"href="index.html">view project</a>
+<a target="_blank"href="https://jananishree2006.github.io/weather-app/">view project</a>
 </div>
 </section>  
 <section id="contact">
@@ -47,66 +47,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-header {
-  background: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-section {
-  padding: 40px;
-}
-
-.project-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project {
-  background: #f4f4f4;
-  padding: 20px;
-  width: calc(50% - 20px);
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
-}
-// Smooth scroll behavior
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Simple form submission alert
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Thanks for your message!");
-  this.reset();
-});
